@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>noticia1</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'aplicacionWeb/assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'aplicacionWeb/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Noticias Hoy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'inicio' %}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'sobremi' %}">Sobre Mi</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'home' %}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'contacto' %}">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static 'aplicacionWeb/assets/img/celu.jpg' %}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Así es la empresa que ha contribuido a un país más digital, inclusivo y sostenible.</h1>
+                            <h2 class="subheading">Orange y su Fundación celebran sus 25 años en España en plena forma. La compañía de telecomunicaciones mantiene el compromiso con la digitalización del país, donde ya ha invertido más de 35.5000 millones de euros desde 1998. Y lo que queda…</h2>
+                            <span class="meta">
+                                Noticia de
+                                <a href="#!">El Pais</a>
+                                14 Agosto 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>En 1998, España (y el mundo) eran muy diferentes a lo que son hoy. En el año en el que Titanic hizo historia en los Oscar con sus 11 estatuillas, en nuestro país aún se pagaba en pesetas. Al otro lado del Atlántico, en Estados Unidos, dos jóvenes ingenieros –Sergey Brin y Larry Page– lanzaron una web llamada Google. El DVD reemplazó para siempre a los antiguos vídeos VHS y, a 400 kilómetros de distancia de la Tierra, comenzó a funcionar la Estación Espacial Internacional.</p>
+                        <p>Aquel mismo año, la venta de teléfonos móviles se disparó a 162.900 unidades en todo el planeta, una cifra récord. Y una compañía de telecomunicaciones todavía desconocida en España, Orange, empezó a operar en suelo español. Han pasado 25 años, un cuarto de siglo en el que la operadora ha contribuido a la digitalización y modernización de España mediante una inversión que supera los 35.500 millones de euros.</p>
+                        <p>El compromiso de Orange con el progreso del país se mantiene intacto. En los últimos cinco años, la compañía ha dedicado el 20% de sus ingresos anuales a mejorar sus planes de innovación y a extender sus infraestructuras. Los datos avalan este esfuerzo. Hoy, su despliegue de fibra llega a casi 17 millones de hogares y negocios, y su cobertura 5G alcanza al 80% de la población. De hecho, se ha convertido en el primer operador español ⎯y uno de los primeros en Europa⎯ en lanzar la red 5G+. Esta tecnología, a la que ya puede acceder el 30% del territorio, ofrece mayores prestaciones: mejor cobertura en interiores, más duración de la batería de los teléfonos y seguridad, menor latencia…</p>
+                        <p>Todas estas acciones demuestran la contribución de Orange tanto con la transformación digital de la sociedad y de su tejido productivo como con las personas, que son las que otorgan todo el sentido a la tecnología. Un ejemplo es la reciente inauguración del Orange Digital Center, en Madrid. La Fundación Orange, que también celebra este año sus bodas de plata en España, es la impulsora de este centro. Está diseñado para reducir la brecha digital en colectivos en riesgo de exclusión: desde jóvenes con dificultades de adaptación a mujeres en situación precaria y personas con autismo.</p>
+                        <p>El objetivo es que todos ellos puedan adquirir conocimientos y habilidades para su desarrollo personal, de manera que puedan integrarse en la sociedad e incrementar así sus competencias profesionales y su inserción laboral. Estas nuevas instalaciones sirven, además, como punto de encuentro para emprendedores y startups, que pueden acceder a multitud de prácticas y recursos para poner en marcha sus negocios.</p>
+                        <h2 class="section-heading">A favor del medio ambiente.</h2>
+                        <p>Otra de las líneas de actuación prioritarias de Orange pasa por su apuesta por el desarrollo sostenible y la lucha contra el cambio climático. Pese al aumento de su negocio, la compañía ha sido capaz de reducir sus emisiones de dióxido de carbono (CO₂). Solo en el último año, han disminuido hasta un 57%. De esta manera, Orange alcanzará la neutralidad en emisiones de carbono en España en 2023 (emisiones netas para el alcance 1 y 2 utilizando compensación de emisiones).</p>
+                        <p>Entre otras acciones, continuará con la reforestación del bosque Orange, ubicado en Ejulve (Teruel), que fue arrasado por un incendio forestal en 2009. Aquí ya se han plantado casi 37.000 árboles en unas 40 hectáreas, capaces de absorber 9.750 toneladas de CO₂. La idea es llegar a las 54 hectáreas a lo largo de este año.</p>
+                        <blockquote class="blockquote">El impulso de las energías limpias es otra de sus prioridades. El operador ha anunciado una inversión de 2,5 millones de euros para el autoconsumo solar. Hasta finales de 2024, colocará paneles solares en 33 instalaciones de 19 provincias. Y acelerará el despliegue de su programa de reciclaje para dispositivos móviles en Europa, para alcanzar el 30% en 2025.</blockquote>
+                        <p>De cara al futuro, Orange mantiene su apuesta por España. En su hoja de ruta, la compañía de telecomunicaciones es consciente de que aún quedan numerosos retos que cumplir, relacionados con la digitalización. Por eso, tanto la multinacional como su Fundación reafirman su compromiso para contribuir a la transformación digital, la transición ecológica y la cohesión social. Estos tres pilares son parte fundamental de su actividad y están alineados con las necesidades de un país y un mundo que se enfrenta al desafío de dejar atrás las incertidumbres de hoy para afrontar con optimismo la conquista del mañana. La pregunta es ¿Cuan cerca de Argentina estan?</p>
+                        
+                        <p>
+                            Editado por
+                            <a href="http://spaceipsum.com/">El Pais</a>
+                            &middot; Imagenes de
+                            <a href="https://www.flickr.com/photos/nasacommons/">Luis Pascal</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'aplicacionWeb/js/scripts.js' %}"></script>
+    </body>
+</html>

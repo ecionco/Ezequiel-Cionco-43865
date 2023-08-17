@@ -1,0 +1,25 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+
+{% block cabecera %}
+    <div class="masthead-heading text-uppercase">Login</div>
+{% endblock cabecera %}
+
+{% block contenido %}
+<br>
+{% if mensaje %}
+<h4>
+    <p style="color:red" align="center">
+    {{ mensaje }}
+    </p>
+</h4>
+{% endif %}
+
+<form action="" method="POST">
+        {% csrf_token %}
+        <table>
+          {{ form.as_table }}
+        </table>
+        <button style="padding: 10px 20px; background-color: #ff9900; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Entrar</button>
+</form>
+{% endblock contenido %}

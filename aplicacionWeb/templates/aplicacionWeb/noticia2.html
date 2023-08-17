@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Noticia2</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'aplicacionWeb/assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'aplicacionWeb/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Noticias</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'inicio' %}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'sobremi' %}">Sobre Mi</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'home' %}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'contacto' %}">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static 'aplicacionWeb/assets/img/corralon.jpg' %}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Plazo fijo versus corralón: cuánto rinde acopiar materiales de construcción y cómo compara con el avance de precios.</h1>
+                            <h2 class="subheading">Las compras estratégicas de insumos, con la posibilidad de retirar los productos hasta en 12 meses le ganan a la inflación y también pueden superar las tasas que ofrecen los bancos</h2>
+                            <span class="meta">
+                                Editado por
+                                <a href="#!">Infobae</a>
+                                14 Agosto 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>En el actual escenario económico de la Argentina, con una inflación mensual que volvió a la zona de 7% el mes pasado y se proyecta incluso por encima de 8% para este mes, los ahorristas y empresas que buscan preservar el valor de su liquidez en pesos se enfrentan a dificultades notables. Pero si la apuesta es invertir en el sector de la construcción, los expertos señalan que existen opciones para ganar rentabilidad. Por ejemplo, en el acopio de materiales a un año de plazo. Según aseguran, una apuesta de esas características permitiría ganar lo mismo o más que un plazo fijo.</p>
+                        <p>Esto a pesar de que el sector de la construcción -o precisamente por ello- retrocede en términos de actividad. Según informó ayer el INDEC, la construcción cayó 2,8% en junio comparado con el mismo mes del año pasado. Paradójicamente, ese desempeño contribuye a las ganancias futuras de la estrategia de acopio ya que la menor demanda de materiales “abarata” los precios de los materiales, que de todos modos crecen al ritmo de la inflación. Sin embargo, la apuesta en un plazo de 12 meses es el repunte del sector, lo que potenciaría una suba de los precios.</p>
+                        <p>En otras palabras, la alternativa de acopiar materiales consiste en adquirir y almacenar productos de construcción con el propósito de capitalizar el aumento de su valor en el tiempo. Sin ir más lejos, el costo de los materiales subió en junio, según el INDEC, 7% en comparación al mes anterior, es decir, 1 punto por encima de la inflación del período. En términos interanuales, la suba fue de 120%, lo que no sólo supera el nivel de inflación sino también las ganancias obtenidas por quienes hayan invertido en un plazo fijo, con tasas que se ubicaron, salvo meses puntuales, por debajo de la inflación a pesar de las últimas subas dispuestas que las llevaron a 97% nominal anual.</p>
+                        <p>Si a la suba de precios por encima de la inflación general se suma la posible ganancia por el aumento de valor de los materiales seleccionados, la inversión puede presentar características atractivas. A saber:</p>
+                        <p>Protección contra la inflación: Una de las principales ventajas del acopio es su capacidad para actuar como una protección contra la inflación. Al almacenar materiales, los inversores pueden asegurar los precios actuales y proteger su inversión del impacto de la inflación. A medida que los precios de los materiales de construcción aumentan debido a la inflación, el valor del acopio también se incrementa.</p>
+                        
+                        <p>Aprovechamiento de las fluctuaciones de precios: La industria de la construcción está sujeta a fluctuaciones del mercado y variaciones de precios en los materiales. El acopio permite a los inversores aprovechar condiciones favorables del mercado y comprar materiales cuando los precios son relativamente bajos. De esta manera, se posicionan para beneficiarse de futuros aumentos de precios, maximizando las ganancias potenciales.</p>
+                        <p>Inversión a mediano y largo plazo: El acopio es una estrategia de inversión a mediano/largo plazo. Los inversores suelen mantener los materiales almacenados durante un período de tiempo antes de utilizarlos en proyectos de construcción. Este horizonte de inversión más largo puede conducir a mayores rendimientos en comparación con inversiones a corto plazo, como cuentas de ahorro tradicionales, plazos fijos, etc.</p>
+                        
+                        <p>Inversión estable: A diferencia de algunas inversiones financieras, el valor del acopio no está directamente vinculado a tasas de interés o al rendimiento del mercado de valores. En cambio, está relacionado con el valor tangible de los materiales almacenados. Esta estabilidad puede ser atractiva para los inversores que buscan una opción más predecible y segura.</p>
+                        
+                        <p>“El acopio de materiales se presenta como una opción de inversión especialmente atractiva para aquellos involucrados en proyectos de construcción. Al comprar materiales durante momentos favorables del mercado, como los que está atravesando actualmente la Argentina, los inversionistas pueden capitalizar en futuras alzas de precios y escasez, maximizando así sus ganancias potenciales”, explicó Federico Lawler, gerente regional de Familia Bercomat, una empresa del sector.</p>
+                        
+                        <p>En este sentido, el ejecutivo señaló que los beneficios se maximizan al año de plazo, el período máximo que pueden permanecer almacenados antes de ser trasladados, y advirtió que es clave la selección de los materiales a acopiar y tener en cuenta los costos de almacenamiento.</p>
+                        
+                        <p>
+                            Editado por
+                            <a href="http://spaceipsum.com/">Infobae</a>
+                            &middot; Imagenes de
+                            <a href="https://www.flickr.com/photos/nasacommons/">Lucrecia Magnus</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'aplicacionWeb/js/scripts.js' %}"></script>
+    </body>
+</html>

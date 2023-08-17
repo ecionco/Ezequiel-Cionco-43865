@@ -1,0 +1,19 @@
+La pagina esta diseñada con 2 aplicaciones.
+AplicacionWeb
+- Tiene noticias laborales actuales.
+- Una seccion sobre mi.
+- Una seccion de contacto para prefuntas del usuario.
+- Una extencion a "Blog", la cual te lleva a la otra aplicacion.
+
+AplicacionBlog.
+- Esta seccion tiene varios botones.
+- Uno para volver a la pagina Web inicial.
+- Otro para volver al inicio de esa misma pagina aplicacionBlog.
+- Cuando no estas logueado, no puedes acceder a las funciones.
+- Tiene la funcion de crear un nuevo usuario, modificarlo y agregar un avatar.
+- Una vez logueado, puedes acceder a la administracion con el usuario: admin  contraseña:12345
+- Los demas botones sirben para acceder a Trabajos cargados, verlos, crearlos, modificarlos y eliminarlos.
+- El Boton Para trabajadores tiene la misma funcionalidad.
+- La parte de la carga de Rubros tiene por default los rubros que se pueden cargar.
+- Hay una funcion que es recomendacion, la cual permite a los usuarios calificar al trabajador y dejar una reseña.
+- Una funcion que es "vincular" la cual matchea por rubro a trabajos con trabajadores de manera automatica.

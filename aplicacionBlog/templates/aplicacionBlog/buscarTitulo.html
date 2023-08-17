@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Titulo</title>
+</head>
+<body>
+    <h3 style="font-size: 24px; color: #ff9900; text-transform: uppercase; letter-spacing: 2px;">Buscar una Nueva Oportunidad</h3>
+    <form action="/aplicacionBlog/buscar_titulo2" method="get">
+        {% csrf_token %}
+        <input type="text" name="titulo" id="titulo">
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>

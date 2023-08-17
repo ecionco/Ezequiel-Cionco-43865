@@ -1,0 +1,20 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+
+{% block cabecera %}
+    <div class="masthead-heading text-uppercase">Editar Perfil {{ usuario}}</div>
+{% endblock cabecera %}
+
+{% block contenido %}
+<br>
+    <h3 style="font-size: 24px; color: #ff9900; text-transform: uppercase; letter-spacing: 2px;">Editar Perfil</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <button style="padding: 10px 20px; background-color: #ff9900; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Actualizar Usuario</button>
+
+    </form>
+</body>
+{% endblock contenido %}

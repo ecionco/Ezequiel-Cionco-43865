@@ -1,0 +1,25 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+    Trabajadores de Recomendaciones {{ trabajador }}
+{% block contenido %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Trabajador</th>
+                <th>Puntaje</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rec in recomendaciones %}
+                <tr>
+                    <td>{{ rec.id }}</td>
+                    <td>{{ rec.trabajador.nombre }}</td>
+                    <td>{{ rec.puntaje }}</td>
+                    <td>{{ rec.comentarios }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock contenido %}

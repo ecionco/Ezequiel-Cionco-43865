@@ -1,0 +1,77 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+
+{% block cabecera %}
+    <div class="masthead-heading text-uppercase">Listado de trabajos</div>
+{% endblock cabecera %}
+
+{% block contenido %}
+<table>
+    <tr>
+        <td width="200"><h2>Trabajos</h2></td>
+        <td>
+            <a 
+            href="{% url 'create_trabajo' %}"
+            class="btn btn-primary btn-sm"
+            ><i class="fa fa-plus fa-lg" title="New Record"> </i>
+            </a>
+        </td>
+    </tr>
+</table>
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Trabajos</h2>
+                <h3 class="section-subheading text-muted">"Vini, vidi, vinci"</h3>
+            </div>
+            <div class="row text-center">
+                <!-- Other tags and content here -->
+            </div>
+        </div>
+    </section>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Rubro</th>
+                <th>Salario_Ofrecido</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for trabajo in trabajo_list %}
+                <tr>
+                    <td>{{ trabajo.id }}</td>
+                    <td>{{ trabajo.titulo }}</td>
+                    <td>{{ trabajo.descripcion }}</td>
+                    <td>{{ trabajo.get_rubro_display }}</td>
+                    <td>{{ trabajo.salario_ofrecido }}</td>
+                    <td>
+                        <a
+                        href="{% url 'detail_trabajos' trabajo.id %}"
+                        class="btn btn-info"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                        ><i class= "fa fa-search fa-sm" title="View Record"></i>
+                        </a>
+                        <a
+                        href="{% url 'update_trabajos' trabajo.id %}"
+                        class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                        ><i class= "fa fa-edit fa-sm" title="Delete Record"></i>
+                        </a>
+                        <a
+                        href="{% url 'delete_trabajos' trabajo.id %}"
+                        class="btn btn-danger"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                        ><i class= "fa fa-trash fa-sm" title="Delete Record"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock contenido %}
+
+

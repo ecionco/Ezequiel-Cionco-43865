@@ -1,0 +1,27 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+    Rubros de Trabajos {{ rubro }}
+{% block contenido %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Rubro</th>
+                <th>Salario_Ofrecido</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for trabajo in trabajos %}
+                <tr>
+                    <td>{{ trabajo.id }}</td>
+                    <td>{{ trabajo.titulo }}</td>
+                    <td>{{ trabajo.descripcion }}</td>
+                    <td>{{ trabajo.get_rubro_display }}</td>
+                    <td>{{ trabajo.salario_ofrecido }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock contenido %}

@@ -1,0 +1,37 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+
+
+
+{% block contenido %}
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Vinculacion</h2>
+                <h3 class="section-subheading text-muted">"Vini, vidi, vinci"</h3>
+            </div>
+            <div class="row text-center">
+                <!-- Other tags and content here -->
+            </div>
+        </div>
+    </section>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Trabajo</th>
+                <th>Trabajador</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vinculacion in vinculaciones %}
+                <tr>
+                    <td>{{ vinculacion.id }}</td>
+                    <td>{{ vinculacion.trabajo.titulo }}</td>
+                    <td>{{ vinculacion.trabajador.nombre }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock contenido %}
+

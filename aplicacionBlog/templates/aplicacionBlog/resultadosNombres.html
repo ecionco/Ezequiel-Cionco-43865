@@ -1,0 +1,29 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+    Nombres de Trabajadores {{ nombre }}
+{% block contenido %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Telefono</th>
+                <th>Rubro</th>
+                <th>Habilidades</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for trabajador in trabajadores %}
+                <tr>
+                    <td>{{ trabajador.id }}</td>
+                    <td>{{ trabajador.nombre }}</td>
+                    <td>{{ trabajador.edad }}</td>
+                    <td>{{ trabajador.telefono }}</td>
+                    <td>{{ trabajador.get_rubro_display }}</td>
+                    <td>{{ trabajador.habilidades }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>   
+{% endblock contenido %}

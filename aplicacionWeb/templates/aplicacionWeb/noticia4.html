@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Noticia4</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'aplicacionWeb/assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'aplicacionWeb/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Noticias</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'inicio' %}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'sobremi' %}">Sobre Mi</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'home' %}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'contacto' %}">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static 'aplicacionWeb/assets/img/empleo.jpg' %}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Sorpresa en el año electoral: hay trabajo pero falta talento.</h1>
+                            <h2 class="subheading">Pese al ciclón económico hay búsquedas en rubros dinámicos como energía, conocimiento, minería y turismo. El problema es encontrar las personas, dicen expertos. El 35% de los jóvenes abandona el secundario y cayó la formación profesional.</h2>
+                            <span class="meta">
+                                Editado por
+                                <a href="#!">Clarin</a>
+                                14 Agosto 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Si hubiese que resumir la historia de Analía Martínez, podría decirse que desde que se graduó, esta ingeniera en sistemas de 32 años ha logrado posiciones relevantes en las tres empresas en las que se desempeñó hasta ahora. Su carrera es una de las más requeridas y ella misma ayudó a abrir puertas a varios de sus colegas.</p>
+                        <p>“Prepotencia de trabajo muy bien remunerada”, se define. Y así cuenta que recibe propuestas, pese al inestable momento actual. Claro que Analía se mueve en un universo particular, el de la economía del conocimiento tan ávida de talentos y con unas 10.000 posiciones vacantes. No es la excepción. Algo parecido está sucediendo en el negocio de la energía, la minería, la hotelería y especialmente , en la gastronomía.</p>
+                        <p>Andrea Avila, CEO de la holandesa Randstad en Argentina, Chile y Uruguay dedicada a búsquedas en todas las industrias, asegura que “hay pleno empleo en profesionales. Tenemos que buscar a los que están ocupados y tentarlos para nuevas posiciones”.</p>
+                        <p>El dato que llama la atención es que el nivel de búsquedas de este vertiginoso año electoral es similar al de 2022 cuando la economía se recuperaba de la pandemia.</p>
+                        <p>Avila dice que, pese al salto del blue y la incertidumbre política, “no afloja la demanda de empleo pero nuestro problema es encontrar las personas. Hay escasez de talento en un país donde el 35% de los jóvenes abandona el secundario”.</p>
+                        <h2 class="section-heading">Caída en la formación profesional.</h2>
+                        <p>Esta experta subraya otro fenómeno y es la caída persistente de la formación profesional. “En la generación de 25 a 35 años solo hay un 18% de profesionales cuando en la de 45 a 54 años llegan al 26%”.</p>
+                        <p>Así, el sector privado puso el foco en lo que se ha dado en llamar el entrenamiento de última milla.</p>
+                        <p>A diferencia de otras épocas, existe una alta rotación y los postulantes no eligen tanto por el salario sino por un ambiente de trabajo agradable y desafiante.</p>
+                        <p>Leandro Cazorla, CEO del Grupo suizo Adecco para Argentina y Uruguay y dedicado a los recursos humanos, habla del “life long learning” una cultura de aprendizaje continuo en las organizaciones que no solo las ayuda a ser más atractivas sino a situarse mejor en la competencia por el talento.</p>
+                        <h2 class="section-heading">Demanda laboral, pese al ciclón económico</h2>
+                        <p>Carzola, quien es también Presidente de la Cámara de Agencias Privadas de Empleo,  resalta que la demanda laboral se estancó, pero la diferencia es que pese al ciclón por el dólar y el súper cepo que paraliza algunas actividades, no hay despidos ni suspensiones. “Observamos cierre de turnos por la falta de abastecimiento y la paralización de proyectos por la incertidumbre”, advierte.</p>
+                        <p>En su visión, el atraso salarial medido en dólares explica que se sostenga el empleo. “Si la inestabilidad económica se mantiene en el tiempo no solo se frena la creación de empleo. También habrá reducción de planteles”, anticipa.</p>
+                        <p>En mayo, último dato disponible, se generaron casi 18.000 nuevos puestos de trabajo registrados en el sector privado y el nivel de empleo se ubicó por encima de 2018, de acuerdo a los daros del Ministerio de Trabajo.</p>
+                        <p>“La cantidad de puestos de empleo registrado (6.356.237) constituye el valor máximo de la serie histórica. Es un fenómeno que se percibe en los últimos meses y muestra el crecimiento del empleo a la par de un amesetamiento de la actividad”, señalan en el CEPA (Centro de Economía Política Argentina).</p>
+                        <p>Entre junio 2022 y la estimación de junio de 2023, la actividad se retrajo 2,4% pero se generaron 206 mil puestos de trabajo registrado privado.</p>
+                        <p>Hay otro dato que sorprende a los expertos y es que a la gente le importa más estar empleada, que incluso el alza de los precios y dado lo que está sucediendo, ha disminuido el miedo a perder el trabajo. Esa sensación junto a la huída del peso es el otro motor que impulsa el consumo.</p>
+                        <p>
+                            Editado por
+                            <a href="http://spaceipsum.com/">Clarin</a>
+                            &middot; Imagenes de
+                            <a href="https://www.flickr.com/photos/nasacommons/">Dolores Lamda</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'aplicacionWeb/js/scripts.js' %}"></script>
+    </body>
+</html>

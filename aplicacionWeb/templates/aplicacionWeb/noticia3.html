@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Noticia3</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'aplicacionWeb/assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'aplicacionWeb/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Noticias</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'inicio' %}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'sobremi' %}">Sobre Mi</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'home' %}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'contacto' %}">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{% static 'aplicacionWeb/assets/img/ladrillo.jpg' %}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Cuánto dinero se necesita para construir viviendas y cómo impacta la inflación sobre el costo de las obras.</h1>
+                            <h2 class="subheading">Frente al contexto económico actual sigue siendo beneficioso edificar como refaccionar propiedades. Cómo se ubica el valor del costo del m2 medido en dólares.</h2>
+                            <span class="meta">
+                                Editado por
+                                <a href="#!">Infobae</a>
+                                14 Agosto 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Aunque la economía argentina no pueda dejar atrás los espasmos del tipo de cambio blue ni tasas de inflación mensuales que impactan el segmento inmobiliario, en el sector de la construcción de viviendas siguen afirmando que es un momento oportuno para encarar obras, desde la edificación hasta la refacción de viviendas.</p>
+                        <p>Según el relevamiento de la Asociación de Pymes de la Construcción (Apymeco), el precio del metro cuadrado de junio registró un valor de $386.962,29, un incremento del 46,60% en la primera mitad de 2022 y del 119,65% en los últimos 12 meses.</p>
+                        <p>Según Matías Hernández, presidente de Apymeco, el incremento del precio del m2 de construcción viene acompañando los aumentos de la economía, pero en menor grado. Esto sucede, dijo a Infobae, “Incluso en comparación con otros ítems importantes, como por ejemplo bebidas, alimentos e indumentaria, según lo que analiza el INDEC. Esto se pone de manifiesto en el 5,14% de aumento mensual de nuestro índice, menor al del Indec que para junio registró un alza del 6% y en mayo del 7,8 por ciento”.</p>
+                        
+                        <h2 class="section-heading">Tres dígitos.</h2>
+                        <p>Desde el sector sostienen que el aumento interanual del 119,65% deja en claro el fracaso de la política económica. “Es la causa principal de todos los desequilibrios que estamos viviendo. Esto genera la desaparición de los precios relativos, hecho que está aparejado con la disminución de la capacidad adquisitiva. Estos niveles de inflación son una fábrica de frustraciones para el ciudadano medio aspira a mejorar su calidad de vida”, subrayó Hernández.</p>
+                        <p>En su informe sectorial, de mayo 2023 Reporte Inmobiliario registró que construir un edificio de poco más de 1.000 metros totales en propiedad horizontal de 8 pisos, arroja un presupuesto inicial que supera los 300 millones de pesos.</p>
+                        <blockquote class="blockquote">El sector de la construcción espera previsibilidad a partir del ciclo político y económico que se inicie a fin de año. Es vital reducir inflación y generar condiciones que permitan ahorrar e invertir en reciclar la vivienda.</blockquote>
+                        <p>El aumento del costo de construir un edificio residencial medido en dólares blue creció el 6,8% respecto al mes anterior, alentado sobre todo por el permanente de los precios en pesos de insumos, materiales, servicios y subcontratos debido a la dinámica que impone un contexto de alta inflación como el actual.</p>
+                        <p>Así, tomando la cotización blue de la divisa norteamericana, el costo total se ubicó por encima de los USD 613.000, y el costo por m2 vendible en casi 776 dólares.</p>
+                        <p>“Evidentemente convivimos con una inflación en dólares, especialmente por el ascenso del dólar blue, y el aumento de los costos de insumos y mano de obra para la construcción. Pero, asimismo, vale destacar que en valores relativos sigue estando muy bajo el costo de construcción y por esa razón sigue siendo una reserva de valor real. Cuando iniciamos el índice, en octubre del 2015, el valor en dólares era de aproximadamente USD 1.550 el m2 y hoy estamos en alrededor USD 775, o sea, en el 50% de un pico, pero estamos más abajo que la media registrada”, aclaró Hernández.</p>
+                        <p>En el Índice Apymeco, el modelo elegido es un edificio de viviendas multifamiliar de 1.948,02 m2 construibles desarrollado en planta baja y nueve niveles de altura, ubicado en la zona U/C1, de la ciudad de La Plata. El mismo se implanta en un terreno de 10 metros de frente por 30 metros de fondo. Con 7 cocheras cubiertas y 5 descubiertas. En planta baja se encuentra el hall de entrada y la vivienda del portero (2 dormitorios). En las 9 plantas altas tipo se disponen 3 unidades de 1 dormitorio cada una de aproximadamente 49 m2. Cuenta con una terraza accesible por escalera sin parada de ascensor en la misma.</p>
+                        <h2 class="section-heading">El ladrillo defiende lo invertido.</h2>
+                        <p>La arquitecta Gabriela Correa, especialista en proyecto, dirección y ejecución de obras nuevas y remodelaciones, destacó a Infobae que es fundamental recurrir al acopio de materiales de terminación como revestimientos de pared y piso, griferías, y equipamiento como cocina empotrada y extractor de aire, entre otros. Igual que para refaccionar el baño, por ejemplo.</p>
+                        <p>“Hay demoras en las entregas también, por lo tanto sugiero tener claro qué materiales se emplearán para recién comenzar a desmantelar la cocina”, recomendó Correa.</p>
+                        <p>Si no hay mucho presupuesto, lo mejor es pintar los viejos cerámicos de revestimiento con pinturas epoxi, pintar o revestir nuevamente los muebles de cocina y sí cambiar griferías y mesadas. Existen también pinturas y revestimientos vinílicos para pisos y paredes, aptos para zonas húmedas.</p>
+                        <p>“Quien decida mejorar su hogar, sea pintar su frente, renovar cocina y baño, como cambiar pisos de dormitorios o living, siempre agrega un plus tanto en confort como en valorizar la vivienda. Destinar ahorros en tiempos de incertidumbre política y económica potencian el valor de una casa y además la deja preparada para defender mejor su cotización si el propietario decide venderla en un plazo corto o mediano de tiempo”, concluyó Correa.</p>
+                        <p>
+                            Editado por
+                            <a href="http://spaceipsum.com/">Infobae</a>
+                            &middot; Imagenes de
+                            <a href="https://www.flickr.com/photos/nasacommons/">Hernesto Bounotte</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'aplicacionWeb/js/scripts.js' %}"></script>
+    </body>
+</html>

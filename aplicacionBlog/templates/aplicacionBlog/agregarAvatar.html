@@ -1,0 +1,21 @@
+{% extends 'aplicacionBlog/base.html' %}
+{% load static %}
+
+{% block cabecera %}
+    <div class="masthead-heading text-uppercase">Agregar Avatar</div>
+{% endblock cabecera %}
+
+{% block contenido %}
+<body>
+    <h3>Cargar Avatar</h3>
+    <form action="" method="POST" enctype = "multipart/form-data">
+
+        {% csrf_token %}
+        <table>
+            {{ form.as_p }}
+        </table>
+        <button style="padding: 10px 20px; background-color: #ff9900; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Actualizar</button>
+
+    </form>
+</body>
+{% endblock contenido %}
